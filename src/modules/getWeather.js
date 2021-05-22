@@ -6,7 +6,7 @@ async function getCityData(city) {
         const coord_data = await weather.json();
         const coords = await coord_data.coord;
         let data = await getWeather(coords);
-        console.log(data);
+        // console.log(data);
         document.getElementById('city').value = '';
         return data;
     } catch(error) {

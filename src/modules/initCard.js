@@ -6,7 +6,11 @@ function initCard(data, card, iterator, unit) {
     card.querySelector('img').src = imageURL;
     card.querySelector('.generic p').innerText = data.weather[0].description;
     card.querySelector('.stats .temp').innerText = fromKelvin(data.temp.day, unit)
+    card.querySelector('.additional .high-number').innerText = fromKelvin(data.temp.max, unit)
+    card.querySelector('.additional .low-number').innerText = fromKelvin(data.temp.min, unit)
     card.querySelector('.stats .unit').innerText = '°'+unit.toUpperCase();
+    card.querySelector('.additional .high-unit').innerText = '°'+unit.toUpperCase();
+    card.querySelector('.additional .low-unit').innerText = '°'+unit.toUpperCase();
     
 }
 

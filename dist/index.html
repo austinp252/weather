@@ -5,19 +5,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Main Page</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Teko&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link rel="stylesheet" href="style.css">
+    
 </head>
 <body>
-    <div class="header">Weekly Forecast</div>
+    <div class="header">Weekly Forecast For the City of</div>
     <div class="content">
+        <div class="city-header"></div>
         <div class="searchbar">
             <form method='get' id='getCity'>
-                <input id='city' type="text" placeholder="Enter a city" required>
+                <input id='city' type="text" placeholder="Enter a different city" required>
             </form>
             <button type='submit' form='getCity' value='Submit'>GO</button>
         </div>
-        <div class="city-header"></div>
         <div class="forecast-content">
             <div class="weather-card">
                 <div class="card-header"></div>
@@ -30,31 +33,17 @@
                         <div class="temp"></div>
                         <div class="unit"></div>
                     </div>
-                </div>
-            </div>
-            <div class="weather-card">
-                <div class="card-header"></div>
-                <div class="card-content">
-                    <div class="generic">
-                        <img src="" alt="weather icon">
-                        <p></p>
-                    </div>
-                    <div class="stats">
-                        <div class="temp"></div>
-                        <div class="unit"></div>
-                    </div>
-                </div>
-            </div>
-            <div class="weather-card">
-                <div class="card-header"></div>
-                <div class="card-content">
-                    <div class="generic">
-                        <img src="" alt="weather icon">
-                        <p></p>
-                    </div>
-                    <div class="stats">
-                        <div class="temp"></div>
-                        <div class="unit"></div>
+                    <div class="additional">
+                        <div class="high-content">
+                            <div class="high-label">HIGH</div>
+                            <div class="high-number"></div>
+                            <div class="high-unit"></div>
+                        </div>
+                        <div class="low-content">
+                            <div class="low">LOW</div>
+                            <div class="low-number"></div>
+                            <div class="low-unit"></div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -69,31 +58,17 @@
                         <div class="temp"></div>
                         <div class="unit"></div>
                     </div>
-                </div>
-            </div>
-            <div class="weather-card">
-                <div class="card-header"></div>
-                <div class="card-content">
-                    <div class="generic">
-                        <img src="" alt="weather icon">
-                        <p></p>
-                    </div>
-                    <div class="stats">
-                        <div class="temp"></div>
-                        <div class="unit"></div>
-                    </div>
-                </div>
-            </div>
-            <div class="weather-card">
-                <div class="card-header"></div>
-                <div class="card-content">
-                    <div class="generic">
-                        <img src="" alt="weather icon">
-                        <p></p>
-                    </div>
-                    <div class="stats">
-                        <div class="temp"></div>
-                        <div class="unit"></div>
+                    <div class="additional">
+                        <div class="high-content">
+                            <div class="high-label">HIGH</div>
+                            <div class="high-number"></div>
+                            <div class="high-unit"></div>
+                        </div>
+                        <div class="low-content">
+                            <div class="low">LOW</div>
+                            <div class="low-number"></div>
+                            <div class="low-unit"></div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -107,6 +82,118 @@
                     <div class="stats">
                         <div class="temp"></div>
                         <div class="unit"></div>
+                    </div>
+                    <div class="additional">
+                        <div class="high-content">
+                            <div class="high-label">HIGH</div>
+                            <div class="high-number"></div>
+                            <div class="high-unit"></div>
+                        </div>
+                        <div class="low-content">
+                            <div class="low">LOW</div>
+                            <div class="low-number"></div>
+                            <div class="low-unit"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="weather-card">
+                <div class="card-header"></div>
+                <div class="card-content">
+                    <div class="generic">
+                        <img src="" alt="weather icon">
+                        <p></p>
+                    </div>
+                    <div class="stats">
+                        <div class="temp"></div>
+                        <div class="unit"></div>
+                    </div>
+                    <div class="additional">
+                        <div class="high-content">
+                            <div class="high-label">HIGH</div>
+                            <div class="high-number"></div>
+                            <div class="high-unit"></div>
+                        </div>
+                        <div class="low-content">
+                            <div class="low">LOW</div>
+                            <div class="low-number"></div>
+                            <div class="low-unit"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="weather-card">
+                <div class="card-header"></div>
+                <div class="card-content">
+                    <div class="generic">
+                        <img src="" alt="weather icon">
+                        <p></p>
+                    </div>
+                    <div class="stats">
+                        <div class="temp"></div>
+                        <div class="unit"></div>
+                    </div>
+                    <div class="additional">
+                        <div class="high-content">
+                            <div class="high-label">HIGH</div>
+                            <div class="high-number"></div>
+                            <div class="high-unit"></div>
+                        </div>
+                        <div class="low-content">
+                            <div class="low">LOW</div>
+                            <div class="low-number"></div>
+                            <div class="low-unit"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="weather-card">
+                <div class="card-header"></div>
+                <div class="card-content">
+                    <div class="generic">
+                        <img src="" alt="weather icon">
+                        <p></p>
+                    </div>
+                    <div class="stats">
+                        <div class="temp"></div>
+                        <div class="unit"></div>
+                    </div>
+                    <div class="additional">
+                        <div class="high-content">
+                            <div class="high-label">HIGH</div>
+                            <div class="high-number"></div>
+                            <div class="high-unit"></div>
+                        </div>
+                        <div class="low-content">
+                            <div class="low">LOW</div>
+                            <div class="low-number"></div>
+                            <div class="low-unit"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="weather-card">
+                <div class="card-header"></div>
+                <div class="card-content">
+                    <div class="generic">
+                        <img src="" alt="weather icon">
+                        <p></p>
+                    </div>
+                    <div class="stats">
+                        <div class="temp"></div>
+                        <div class="unit"></div>
+                    </div>
+                    <div class="additional">
+                        <div class="high-content">
+                            <div class="high-label">HIGH</div>
+                            <div class="high-number"></div>
+                            <div class="high-unit"></div>
+                        </div>
+                        <div class="low-content">
+                            <div class="low">LOW </div>
+                            <div class="low-number"></div>
+                            <div class="low-unit"></div>
+                        </div>
                     </div>
                 </div>
             </div>

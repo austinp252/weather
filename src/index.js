@@ -24,8 +24,4 @@ btn.addEventListener('click', () => {
     });
 })
 
-function test() {
-    console.log('testin');
-}
-
 initCity('Boulder', unit);
